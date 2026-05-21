@@ -15,7 +15,7 @@ function validateRegistration(input) {
   }
 
   if (!cleanEmail(input.email).includes("@")) {
-    return "Please use a valid Gmail or Google Workspace email address.";
+    return "Please use a valid email address.";
   }
 
   if (input.role !== roles.ADMIN && !publicRoles.has(input.role)) {
@@ -55,7 +55,7 @@ export default async function handler(request, response) {
     email,
     role: input.role,
     companyName: input.companyName || null,
-    authProvider: input.authProvider || "google",
+    authProvider: input.authProvider || "email",
     subscriptionStatus: isClient ? "payment_required" : "not_required",
     paywallRequired: isClient,
     nextStep: isTalent ? "submit_talent_application" : "activate_membership",

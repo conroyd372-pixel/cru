@@ -71,7 +71,7 @@ menuButton.addEventListener("click", () => topNav.classList.toggle("open"));
 
 if (demoLoginButton && loginStatus) {
   demoLoginButton.addEventListener("click", () => {
-    loginStatus.textContent = "Google sign-in will connect here. Clients go to payment first; talent goes to the application.";
+    loginStatus.textContent = "Email sign-in will connect here. Clients go to payment first; talent goes to the application.";
   });
 }
 
