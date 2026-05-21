@@ -35,3 +35,4 @@
 - `POST /api/task-update`
 - `POST /api/internal-email`
 - `POST /api/strategy-call`
+- `POST /api/agentic-runner`

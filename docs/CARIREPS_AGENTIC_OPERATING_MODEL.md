@@ -33,3 +33,18 @@
 - Message moderation rules for blocked email and phone sharing.
 - Talent matching checklist.
 - Promotion and discount approval checklist.
+
+## Automated Skill Runner
+
+The website now has a rule-based runner at `POST /api/agentic-runner`.
+
+Use it for token-free automation. It can run one skill by name or all skills together:
+
+- `intake-agent`
+- `billing-agent`
+- `matching-agent`
+- `task-operations-agent`
+- `issue-triage-agent`
+- `quality-agent`
+
+The runner reads business logic from code and preserves human-readable skill memory in `docs/skills/`.
