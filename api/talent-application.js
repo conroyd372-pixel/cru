@@ -1,5 +1,6 @@
 import { auditEvent } from "./_lib/audit.js";
 import { methodNotAllowed, readJson, sendJson } from "./_lib/http.js";
+import { hasRequiredCapability, serviceCapabilities } from "./_lib/service-capabilities.js";
 
 export default async function handler(request, response) {
   if (request.method !== "POST") {
@@ -14,6 +15,14 @@ export default async function handler(request, response) {
     return sendJson(response, 400, {
       ok: false,
       message: `Talent application is missing: ${missing.join(", ")}.`
+    });
+  }
+
+  if (!hasRequiredCapability(application.skills)) {
+    return sendJson(response, 400, {
+      ok: false,
+      message: "Talent application must include at least one CariReps service capability.",
+      requiredCapabilities: serviceCapabilities
     });
   }
 
@@ -37,4 +46,3 @@ export default async function handler(request, response) {
 
   return sendJson(response, 200, { ok: true, application: record });
 }
-

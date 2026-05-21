@@ -9,11 +9,30 @@ const serviceTitle = document.getElementById("service-title");
 const serviceCopy = document.getElementById("service-copy");
 const demoLoginButton = document.querySelector("[data-demo-login]");
 const loginStatus = document.getElementById("login-status");
+const agentTierInput = document.getElementById("agent-tier");
+const agentCountInput = document.getElementById("agent-count");
+const serviceModelInput = document.getElementById("service-model");
+const serviceMonthsInput = document.getElementById("service-months");
+const monthlyTotal = document.getElementById("monthly-total");
+const quoteBreakdown = document.getElementById("quote-breakdown");
+
+const pricing = {
+  base: 10,
+  tiers: {
+    english: { label: "English Only", rate: 10 },
+    spanish: { label: "Spanish Only", rate: 10 },
+    bilingual: { label: "Bilingual English & Spanish", rate: 12 }
+  }
+};
 
 const serviceGuide = {
   support: {
     title: "Customer support",
-    copy: "Choose this if you need help answering customers, managing inboxes, booking appointments, or keeping customers updated."
+    copy: "Choose this if you need help answering customers, managing inboxes, booking appointments, or keeping customers updated in English, Spanish, or both."
+  },
+  bilingual: {
+    title: "Bilingual support capabilities",
+    copy: "Choose this if your customers need English and Spanish coverage from professionals who can fit into your existing workflow."
   },
   sales: {
     title: "Sales follow-up",
@@ -74,6 +93,26 @@ if (demoLoginButton && loginStatus) {
     loginStatus.textContent = "Email sign-in will connect here. Clients go to payment first; talent goes to the application.";
   });
 }
+
+function updateQuote() {
+  if (!agentTierInput || !agentCountInput || !monthlyTotal || !quoteBreakdown) return;
+
+  const tier = pricing.tiers[agentTierInput.value] || pricing.tiers.english;
+  const count = Math.max(0, Number.parseInt(agentCountInput.value, 10) || 0);
+  const serviceModel = serviceModelInput?.value || "fixed";
+  const months = Math.max(1, Number.parseInt(serviceMonthsInput?.value, 10) || 1);
+  const total = pricing.base + count * tier.rate;
+  const duration = serviceModel === "ongoing" ? "ongoing month-to-month service" : `${months} month fixed term`;
+
+  monthlyTotal.textContent = `$${total}/month`;
+  quoteBreakdown.textContent = `$10 platform + ${count} ${tier.label} agent${count === 1 ? "" : "s"} at $${tier.rate}/agent/month. Contract: ${duration}.`;
+}
+
+[agentTierInput, agentCountInput, serviceModelInput, serviceMonthsInput].forEach((input) => {
+  input?.addEventListener("input", updateQuote);
+  input?.addEventListener("change", updateQuote);
+});
+updateQuote();
 
 const requestedRoute = location.hash.replace("#", "") || "home";
 const initialRoute = requestedRoute;

@@ -1,6 +1,7 @@
 import { getCurrentUserContext, requireRole, roles } from "./_lib/auth.js";
 import { auditEvent } from "./_lib/audit.js";
 import { methodNotAllowed, readJson, sendJson } from "./_lib/http.js";
+import { calculateMonthlyQuote } from "./_lib/pricing.js";
 
 export default async function handler(request, response) {
   if (request.method !== "POST") {
@@ -22,10 +23,12 @@ export default async function handler(request, response) {
   }
 
   const intake = await readJson(request);
+  const quote = calculateMonthlyQuote(intake);
   const record = {
     id: `request_${Date.now()}`,
     companyId: user.companyId || intake.companyId,
     status: "new_service_request",
+    quote,
     ...intake,
     createdAt: new Date().toISOString()
   };
@@ -39,9 +42,8 @@ export default async function handler(request, response) {
     companyId: record.companyId,
     entityType: "service_request",
     entityId: record.id,
-    plainEnglish: `${user.displayName} submitted a company service request.`
+    plainEnglish: `${user.displayName} submitted a company service request for ${quote.agentCount} ${quote.agentTierLabel} employee(s). First monthly cycle due: $${quote.firstCycleDueToday}.`
   });
 
   return sendJson(response, 200, { ok: true, request: record });
 }
-

@@ -15,8 +15,10 @@
 2. Import the repository into Vercel.
 3. Add environment variables from `.env.example`.
 4. Create Stripe products:
-   - Starter Network monthly: `$19/month`
-   - Starter Network yearly: `$190/year`
+   - Platform Access: `$10/month`
+   - English Only Agent: `$10/agent/month`
+   - Spanish Only Agent: `$10/agent/month`
+   - Bilingual Agent: `$12/agent/month`
 5. Add the Stripe price IDs to Vercel.
 6. Point Stripe webhook to `/api/stripe-webhook`.
 7. Connect Supabase or Neon after the first public site deploy.
@@ -26,3 +28,9 @@
 - `GET /api/health`
 - `POST /api/create-checkout-session`
 - `POST /api/stripe-webhook`
+- `POST /api/pricing-quote`
+- `POST /api/admin-promotions`
+- `GET /api/admin-analytics`
+- `POST /api/issue-report`
+- `POST /api/task-update`
+- `POST /api/internal-email`
