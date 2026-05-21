@@ -7,6 +7,8 @@ const panels = document.querySelectorAll(".panel-view");
 const serviceButtons = document.querySelectorAll("[data-service]");
 const serviceTitle = document.getElementById("service-title");
 const serviceCopy = document.getElementById("service-copy");
+const demoLoginButton = document.querySelector("[data-demo-login]");
+const loginStatus = document.getElementById("login-status");
 
 const serviceGuide = {
   support: {
@@ -66,6 +68,12 @@ serviceButtons.forEach((button) => {
 });
 
 menuButton.addEventListener("click", () => topNav.classList.toggle("open"));
+
+if (demoLoginButton && loginStatus) {
+  demoLoginButton.addEventListener("click", () => {
+    loginStatus.textContent = "Google sign-in will connect here. Clients go to payment first; talent goes to the application.";
+  });
+}
 
 const requestedRoute = location.hash.replace("#", "") || "home";
 const initialRoute = requestedRoute;

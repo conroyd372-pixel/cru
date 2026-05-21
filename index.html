@@ -17,7 +17,7 @@
       <a href="#booking" data-route="booking">Book a Call</a>
       <a href="#join" data-route="join">Join</a>
       <a href="#model" data-route="model">Talent Apply</a>
-      <a href="#join" data-route="join">Log In</a>
+      <a href="#login" data-route="login">Log In</a>
     </nav>
     <button class="menu-button" type="button" aria-label="Open menu">Menu</button>
   </header>
@@ -33,7 +33,7 @@
             <a class="button primary" href="#join" data-route="join">Start for $19/month</a>
             <a class="button" href="#booking" data-route="booking">Book a discovery call</a>
             <a class="button" href="#model" data-route="model">Talent apply</a>
-            <a class="button" href="#join" data-route="join">Member login</a>
+            <a class="button" href="#login" data-route="login">Member login</a>
           </div>
         </div>
         <aside class="hero-visual" aria-label="CariReps service preview">
@@ -374,6 +374,63 @@
           <article class="card"><h3>What if I need more than one service?</h3><p>Start with your biggest need first. CariReps can help you add more support as you grow.</p></article>
         </div>
       </section>
+    </section>
+
+    <section id="login" class="page">
+      <div class="section-heading wide">
+        <p class="section-label">Account portal</p>
+        <h1>Log in or create the right CariReps account.</h1>
+        <p>Use one sign-in entry, then CariReps routes each person to the correct workspace: client, talent, or admin.</p>
+      </div>
+
+      <div class="login-shell">
+        <article class="login-panel">
+          <h2>Continue with Google</h2>
+          <p>Sign in with Gmail or a Google Workspace email. After login, your role decides what you can access.</p>
+          <button class="button primary" type="button" data-demo-login="client">Continue with Google</button>
+          <p class="login-status" id="login-status" aria-live="polite"></p>
+          <div class="login-note">
+            <strong>Client access starts after payment.</strong>
+            <span>Talent applicants can apply without a paywall.</span>
+          </div>
+        </article>
+
+        <div class="portal-grid">
+          <article class="portal-card">
+            <span>Client</span>
+            <h3>Business account</h3>
+            <p>Create your company account, activate the $19/month membership, then submit service requests and message CariReps.</p>
+            <a class="button" href="#join" data-route="join">Create client account</a>
+          </article>
+          <article class="portal-card">
+            <span>Talent</span>
+            <h3>Applicant account</h3>
+            <p>Apply for work, list your skills, country, timezone, tools, and experience. Talent accounts do not require payment.</p>
+            <a class="button" href="#model" data-route="model">Apply as talent</a>
+          </article>
+          <article class="portal-card admin-card">
+            <span>Admin</span>
+            <h3>Operations account</h3>
+            <p>Manage clients, talent, messages, assignments, service requests, audit logs, and blocked contact-sharing reports.</p>
+            <a class="button" href="#dashboard" data-route="dashboard">Admin preview</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="cards three spacer">
+        <article class="card">
+          <h3>Client flow</h3>
+          <p>Clients sign in, activate their membership, complete intake, then access the company workspace and service tools.</p>
+        </article>
+        <article class="card">
+          <h3>Talent flow</h3>
+          <p>Talent signs in, submits skills and availability, completes screening, then waits for CariReps to approve matches.</p>
+        </article>
+        <article class="card">
+          <h3>Message rules</h3>
+          <p>Project messages block email addresses and phone numbers. Admin receives a clear report showing who tried it and where.</p>
+        </article>
+      </div>
     </section>
 
     <section id="company" class="page">
