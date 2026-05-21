@@ -131,6 +131,15 @@ main { min-height: calc(100vh - 75px); }
   box-shadow: var(--shadow);
   overflow: hidden;
 }
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 48%;
+  object-fit: cover;
+  opacity: .72;
+  filter: saturate(.95) contrast(1.03);
+}
 .hero-visual::before {
   content: "";
   position: absolute;
@@ -158,7 +167,7 @@ main { min-height: calc(100vh - 75px); }
   z-index: 1;
 }
 .talent-card {
-  margin-top: 72px;
+  margin-top: 220px;
   width: min(100%, 390px);
   background: rgba(255, 255, 255, .94);
   color: var(--ink);
@@ -300,7 +309,7 @@ main { min-height: calc(100vh - 75px); }
   max-width: 1220px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.2fr .9fr .9fr;
+  grid-template-columns: .9fr 1.35fr .85fr;
   gap: 16px;
 }
 .booking-card {
@@ -328,6 +337,37 @@ main { min-height: calc(100vh - 75px); }
   margin: 22px 0;
 }
 .booking-meta strong { font-size: 38px; }
+.strategy-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.strategy-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+}
+.strategy-form input,
+.strategy-form select {
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 12px;
+  background: white;
+  color: var(--ink);
+}
+.strategy-form .button,
+.strategy-form .form-status {
+  grid-column: 1 / -1;
+}
+.form-status {
+  min-height: 22px;
+  margin: 0;
+  font-weight: 800;
+  color: #2e6c4a;
+}
 .checkout-card {
   background: white;
   border: 1px solid var(--line);
@@ -653,6 +693,20 @@ main { min-height: calc(100vh - 75px); }
 }
 
 .process-list { max-width: 980px; margin: 0 auto; display: grid; gap: 12px; }
+.candidate-hero {
+  display: grid;
+  grid-template-columns: .9fr 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.candidate-hero img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
 .process-list article {
   display: grid;
   grid-template-columns: 54px 1fr;
@@ -741,7 +795,7 @@ main { min-height: calc(100vh - 75px); }
   .top-nav.open { display: grid; }
   .menu-button { display: inline-flex; }
   .page { padding: 34px 20px 56px; }
-  .hero, .dashboard-shell, .register-band, .join-layout, .booking-layout, .company-shell, .help-strip, .login-shell { grid-template-columns: 1fr; }
+  .hero, .dashboard-shell, .register-band, .join-layout, .booking-layout, .company-shell, .help-strip, .login-shell, .candidate-hero { grid-template-columns: 1fr; }
   .trust-strip, .cards.two, .cards.three, .metrics, .pricing-grid, .pricing-builder, .collection-grid, .path-grid, .role-grid, .process-roadmap, .comparison-grid, .portal-grid { grid-template-columns: 1fr; }
   .trust-strip div { border-right: 0; border-bottom: 1px solid var(--line); }
   .trust-strip div:last-child { border-bottom: 0; }

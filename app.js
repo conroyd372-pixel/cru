@@ -15,6 +15,8 @@ const serviceModelInput = document.getElementById("service-model");
 const serviceMonthsInput = document.getElementById("service-months");
 const monthlyTotal = document.getElementById("monthly-total");
 const quoteBreakdown = document.getElementById("quote-breakdown");
+const strategySubmit = document.getElementById("strategy-submit");
+const strategyStatus = document.getElementById("strategy-status");
 
 const pricing = {
   base: 10,
@@ -113,6 +115,29 @@ function updateQuote() {
   input?.addEventListener("change", updateQuote);
 });
 updateQuote();
+
+if (strategySubmit && strategyStatus) {
+  strategySubmit.addEventListener("click", async () => {
+    const form = strategySubmit.closest("form");
+    const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+    strategyStatus.textContent = "Sending request...";
+
+    try {
+      const response = await fetch("/api/strategy-call", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      const result = await response.json();
+      strategyStatus.textContent = result.ok
+        ? "Request sent. CariReps will follow up through your preferred contact method."
+        : result.message;
+    } catch (error) {
+      strategyStatus.textContent = "We could not send this request. Please email CariReps directly.";
+    }
+  });
+}
 
 const requestedRoute = location.hash.replace("#", "") || "home";
 const initialRoute = requestedRoute;

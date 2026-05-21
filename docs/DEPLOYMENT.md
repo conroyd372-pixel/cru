@@ -34,3 +34,4 @@
 - `POST /api/issue-report`
 - `POST /api/task-update`
 - `POST /api/internal-email`
+- `POST /api/strategy-call`

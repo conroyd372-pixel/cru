@@ -16,7 +16,7 @@
       <a href="#home" data-route="home">Home</a>
       <a href="#booking" data-route="booking">Book a Call</a>
       <a href="#join" data-route="join">Join</a>
-      <a href="#model" data-route="model">Talent Apply</a>
+      <a href="#model" data-route="model">Candidates</a>
       <a href="#login" data-route="login">Log In</a>
     </nav>
     <button class="menu-button" type="button" aria-label="Open menu">Menu</button>
@@ -32,13 +32,14 @@
           <div class="hero-actions">
             <a class="button primary" href="#join" data-route="join">Start for $10/month</a>
             <a class="button" href="#booking" data-route="booking">Book a discovery call</a>
-            <a class="button" href="#model" data-route="model">Talent apply</a>
+            <a class="button" href="#model" data-route="model">Candidate apply</a>
             <a class="button" href="#login" data-route="login">Member login</a>
           </div>
         </div>
         <aside class="hero-visual" aria-label="CariReps service preview">
+          <img class="hero-photo" src="https://images.pexels.com/photos/7163395/pexels-photo-7163395.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professional remote support team in a business meeting">
           <div class="talent-card main-talent">
-            <span>Matched Support</span>
+            <span>Caribbean Candidate Network</span>
             <strong>Bilingual Support Rep</strong>
             <small>Ready for English, Spanish, inbox, follow-up, and client updates</small>
           </div>
@@ -76,8 +77,8 @@
           <article class="path-card">
             <span>3</span>
             <h3>I want to work with CariReps</h3>
-            <p>Apply to join the talent pool if you have support, sales, tech, admin, or social media skills.</p>
-            <a class="button" href="#model" data-route="model">Apply as talent</a>
+            <p>Apply to join the candidate pool if you have support, sales, tech, admin, or social media skills.</p>
+            <a class="button" href="#model" data-route="model">Apply as candidate</a>
           </article>
         </div>
       </section>
@@ -246,32 +247,38 @@
       </div>
       <div class="booking-layout">
         <article class="booking-card primary-booking">
-          <span>Discovery call</span>
-          <h2>15-minute fit check</h2>
-          <p>For companies that want to understand the service before joining the Starter Network.</p>
+          <span>Strategy call</span>
+          <h2>Tell us what you need before you pay.</h2>
+          <p>For companies in the US, Canada, UK, and beyond that want Caribbean-based remote support scoped before building a team.</p>
           <div class="booking-meta">
             <strong>Free</strong>
             <small>Video or phone call</small>
           </div>
-          <button class="button primary" type="button">Book appointment</button>
+          <a class="button primary" href="#strategy-form">Start the form</a>
+        </article>
+        <article class="booking-card form-card" id="strategy-form">
+          <h3>Book a strategy call</h3>
+          <form class="strategy-form">
+            <label>First name<input name="firstName" type="text" placeholder="Jane"></label>
+            <label>Last name<input name="lastName" type="text" placeholder="Smith"></label>
+            <label>Work email<input name="email" type="email" placeholder="jane@company.com"></label>
+            <label>Company website<input name="website" type="url" placeholder="https://company.com"></label>
+            <label>Country<select name="country"><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Other</option></select></label>
+            <label>Primary need<select name="need"><option>Bilingual support</option><option>Customer success</option><option>Sales support</option><option>Admin operations</option><option>Social media</option><option>Tech support</option><option>Workflow setup</option></select></label>
+            <label>How many candidates?<input name="candidateCount" type="number" min="1" value="1"></label>
+            <label>Best way to contact<select name="contactMethod"><option>Email</option><option>Phone</option><option>Video call</option></select></label>
+            <button class="button primary" type="button" id="strategy-submit">Send request</button>
+            <p class="form-status" id="strategy-status" aria-live="polite"></p>
+          </form>
         </article>
         <article class="booking-card">
-          <h3>Booking questions</h3>
+          <h3>What we review</h3>
           <ul class="check-list">
-            <li>Company name and website</li>
-            <li>Country and timezone</li>
-            <li>Primary need: talent, support, sales, tech, social media, workflow</li>
-            <li>Current team size and desired start date</li>
-            <li>Best contact email and phone</li>
-          </ul>
-        </article>
-        <article class="booking-card">
-          <h3>Other ways to reach us</h3>
-          <ul class="check-list">
-            <li>Email: itzkoolazjohnson@gmail.com</li>
-            <li>LinkedIn: CariReps company page</li>
-            <li>Use the contact form for service questions.</li>
-            <li>Use booking if you want to speak before signing up.</li>
+            <li>Company goals and current bottlenecks</li>
+            <li>Candidate count and required skills</li>
+            <li>English, Spanish, or bilingual coverage</li>
+            <li>Tools, workflow, and start date</li>
+            <li>Best contact path for follow-up</li>
           </ul>
         </article>
       </div>
@@ -427,10 +434,10 @@
             <a class="button" href="#join" data-route="join">Create client account</a>
           </article>
           <article class="portal-card">
-            <span>Talent</span>
+            <span>Candidate</span>
             <h3>Applicant account</h3>
-            <p>Apply for work, list your skills, country, timezone, tools, and experience. Talent accounts do not require payment.</p>
-            <a class="button" href="#model" data-route="model">Apply as talent</a>
+            <p>Apply for work, list your skills, country, timezone, tools, and experience. Candidate accounts do not require payment.</p>
+            <a class="button" href="#model" data-route="model">Apply as candidate</a>
           </article>
           <article class="portal-card admin-card">
             <span>Admin</span>
@@ -447,8 +454,8 @@
           <p>Clients sign in, activate their membership, complete intake, then access the company workspace and service tools.</p>
         </article>
         <article class="card">
-          <h3>Talent flow</h3>
-          <p>Talent signs in, submits skills and availability, completes screening, then waits for CariReps to approve matches.</p>
+          <h3>Candidate flow</h3>
+          <p>Candidates sign in, submit skills and availability, complete screening, then wait for CariReps to approve matches.</p>
         </article>
         <article class="card">
           <h3>Message rules</h3>
@@ -520,9 +527,16 @@
 
     <section id="model" class="page">
       <div class="section-heading wide">
-        <p class="section-label">Talent application</p>
-        <h1>Join the CariReps talent network.</h1>
+        <p class="section-label">Candidate application</p>
+        <h1>Join the CariReps candidate network.</h1>
         <p>Apply if you can support one or more CariReps capabilities: bilingual support, customer success, sales growth, tech support, social media, onboarding, workflow mapping, KPI tracking, access management, project management, or talent matching.</p>
+      </div>
+      <div class="candidate-hero content-band">
+        <img src="https://images.pexels.com/photos/4427618/pexels-photo-4427618.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professional candidates discussing business work">
+        <div>
+          <h2>Caribbean professionals prepared for global teams.</h2>
+          <p>CariReps is building a candidate network rooted in Jamaica and the wider Caribbean for companies that need reliable support, bilingual communication, and structured remote execution.</p>
+        </div>
       </div>
       <div class="collection-grid spacer">
         <span>Bilingual Support Capabilities</span>
@@ -541,7 +555,7 @@
       <div class="process-list">
         <article><span>1</span><div><h3>Tell us about your experience</h3><p>Share your skills, work history, languages, timezone, and the type of work you are looking for.</p></div></article>
         <article><span>2</span><div><h3>Complete screening</h3><p>CariReps reviews your application and may request a short interview, test task, or training step.</p></div></article>
-        <article><span>3</span><div><h3>Join the talent pool</h3><p>Approved applicants can be considered for client opportunities that match their skills and availability.</p></div></article>
+        <article><span>3</span><div><h3>Join the candidate pool</h3><p>Approved applicants can be considered for client opportunities that match their skills and availability.</p></div></article>
         <article><span>4</span><div><h3>Get matched to work</h3><p>When a company needs your skills, CariReps contacts you with the opportunity details and next steps.</p></div></article>
       </div>
     </section>
