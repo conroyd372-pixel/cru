@@ -1,0 +1,16 @@
+{
+  "name": "carireps-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 8080 --bind 127.0.0.1",
+    "start": "python -m http.server 8080 --bind 127.0.0.1"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.2.27",
+    "stripe": "^16.12.0"
+  },
+  "devDependencies": {
+    "vercel": "^37.14.0"
+  }
+}

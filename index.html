@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CariReps | Talent Systems for Growing Businesses</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" data-route="home" aria-label="CariReps home">
+      <span>Cari<span>Reps</span></span>
+      <small>Hire smarter. Scale faster. Save more.</small>
+    </a>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#booking" data-route="booking">Book a Call</a>
+      <a href="#join" data-route="join">Join</a>
+      <a href="#model" data-route="model">Talent Apply</a>
+      <a href="#join" data-route="join">Log In</a>
+    </nav>
+    <button class="menu-button" type="button" aria-label="Open menu">Menu</button>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="section-label">For businesses in the US, Canada, and global markets</p>
+          <h1>Get the business help you need without hiring a full team.</h1>
+          <p>CariReps helps growing companies find support for customer service, sales follow-up, tech support, social media, admin work, and workflow setup.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#join" data-route="join">Start for $19/month</a>
+            <a class="button" href="#booking" data-route="booking">Book a discovery call</a>
+            <a class="button" href="#model" data-route="model">Talent apply</a>
+            <a class="button" href="#join" data-route="join">Member login</a>
+          </div>
+        </div>
+        <aside class="price-panel" aria-label="Starter subscription">
+          <span>Starter Network</span>
+          <strong>$19</strong>
+          <small>per month</small>
+          <ul>
+            <li>Member access</li>
+            <li>Service request intake</li>
+            <li>Resource library</li>
+            <li>Upgrade path to managed support</li>
+          </ul>
+        </aside>
+      </div>
+
+      <section class="path-section" aria-label="Choose your path">
+        <div class="section-heading">
+          <p class="section-label">What do you need today?</p>
+          <h2>Pick the option that sounds most like you.</h2>
+        </div>
+        <div class="path-grid">
+          <article class="path-card">
+            <span>1</span>
+            <h3>I need help for my business</h3>
+            <p>Start here if you need customer support, sales help, admin help, social media, or a trained rep.</p>
+            <a class="button primary" href="#join" data-route="join">Join CariReps</a>
+          </article>
+          <article class="path-card">
+            <span>2</span>
+            <h3>I want to ask questions first</h3>
+            <p>Book a short call before signing up. Good if you are not sure which service fits.</p>
+            <a class="button" href="#booking" data-route="booking">Book a call</a>
+          </article>
+          <article class="path-card">
+            <span>3</span>
+            <h3>I want to work with CariReps</h3>
+            <p>Apply to join the talent pool if you have support, sales, tech, admin, or social media skills.</p>
+            <a class="button" href="#model" data-route="model">Apply as talent</a>
+          </article>
+        </div>
+      </section>
+
+      <div class="trust-strip">
+        <div><strong>1.</strong> Choose your path</div>
+        <div><strong>2.</strong> Tell us what you need</div>
+        <div><strong>3.</strong> Get matched with help</div>
+        <div><strong>4.</strong> Track the work</div>
+      </div>
+
+      <section class="register-band" aria-label="Contact and signup options">
+        <div>
+          <p class="section-label">Choose your next step</p>
+          <h2>Book a call first or sign up now.</h2>
+          <p>If you want to ask questions first, schedule a discovery call. If you already know you want access, join the Starter Network and continue from there.</p>
+        </div>
+        <div class="mini-flow">
+          <span>Book a discovery call</span>
+          <span>Email CariReps</span>
+          <span>Connect on LinkedIn</span>
+          <span>Join Starter Network</span>
+        </div>
+      </section>
+
+      <section class="content-band">
+        <div class="section-heading">
+          <p class="section-label">Service lines</p>
+          <h2>Simple service options, plain language.</h2>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <h3>Find me a rep</h3>
+            <p>For companies that need help finding someone for support, sales, admin, or tech work.</p>
+          </article>
+          <article class="card">
+            <h3>Help me manage customers</h3>
+            <p>For inboxes, follow-ups, customer service, appointment support, and day-to-day communication.</p>
+          </article>
+          <article class="card">
+            <h3>Organize my workflow</h3>
+            <p>For businesses that need tasks, reports, handoffs, onboarding, and team processes cleaned up.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="service-picker content-band">
+        <div class="section-heading">
+          <p class="section-label">Quick service guide</p>
+          <h2>Click what you need and we will point you the right way.</h2>
+        </div>
+        <div class="picker-controls" aria-label="Service guide">
+          <button class="active" data-service="support">Customer support</button>
+          <button data-service="sales">Sales follow-up</button>
+          <button data-service="tech">Tech support</button>
+          <button data-service="social">Social media</button>
+          <button data-service="workflow">Workflow setup</button>
+        </div>
+        <article class="picker-result" aria-live="polite">
+          <h3 id="service-title">Customer support</h3>
+          <p id="service-copy">Choose this if you need help answering customers, managing inboxes, booking appointments, or keeping customers updated.</p>
+          <a class="button primary" href="#join" data-route="join">Start this request</a>
+        </article>
+      </section>
+
+      <section class="pain-section content-band">
+        <div class="section-heading">
+          <p class="section-label">Does this sound familiar?</p>
+          <h2>When the work is growing but the team is not.</h2>
+        </div>
+        <div class="cards three">
+          <article class="card"><h3>Customers wait too long</h3><p>Messages, calls, and follow-ups pile up because nobody owns the response process.</p></article>
+          <article class="card"><h3>You are doing every small task</h3><p>Admin work, scheduling, inboxes, and updates keep pulling you away from bigger decisions.</p></article>
+          <article class="card"><h3>Hiring feels risky</h3><p>You need help, but you do not want to waste money on the wrong person or a confusing process.</p></article>
+        </div>
+      </section>
+
+      <section class="role-section content-band">
+        <div class="section-heading">
+          <p class="section-label">What can CariReps help with?</p>
+          <h2>Support for the work that keeps your business moving.</h2>
+        </div>
+        <div class="role-grid">
+          <article><h3>Admin & Operations</h3><p>Scheduling, data entry, inbox cleanup, documents, and daily task support.</p></article>
+          <article><h3>Customer Support</h3><p>Messages, calls, help desk support, appointment updates, and customer follow-up.</p></article>
+          <article><h3>Sales Support</h3><p>Lead follow-up, CRM updates, prospect lists, booking calls, and pipeline support.</p></article>
+          <article><h3>Marketing & Social</h3><p>Content support, posting help, message replies, simple campaigns, and community updates.</p></article>
+          <article><h3>Tech Support</h3><p>Account help, onboarding support, software troubleshooting, and support tickets.</p></article>
+          <article><h3>Workflow Setup</h3><p>Task lists, handoffs, reporting, onboarding steps, and simple operating systems.</p></article>
+        </div>
+      </section>
+
+      <section class="content-band">
+        <div class="section-heading">
+          <p class="section-label">How CariReps helps</p>
+          <h2>We help you figure out the right help before you overhire.</h2>
+        </div>
+        <div class="cards three">
+          <article class="card"><h3>Service fit check</h3><p>We help you decide whether you need support, sales, admin, tech, social media, or workflow help.</p></article>
+          <article class="card"><h3>Guided request</h3><p>After joining, you submit what you need in plain language so CariReps can guide the next step.</p></article>
+          <article class="card"><h3>Ongoing communication</h3><p>You can message CariReps about tasks, questions, updates, and next steps from your account.</p></article>
+        </div>
+      </section>
+
+      <section class="process-section content-band">
+        <div class="section-heading">
+          <p class="section-label">How it works</p>
+          <h2>A simple path from overwhelmed to supported.</h2>
+        </div>
+        <div class="process-roadmap">
+          <article><span>1</span><h3>Start</h3><p>Join or book a call so CariReps can understand what you need.</p></article>
+          <article><span>2</span><h3>Explain the work</h3><p>Tell us the tasks, tools, schedule, and kind of help your business needs.</p></article>
+          <article><span>3</span><h3>Choose a service path</h3><p>We help point you toward support, sales, admin, tech, social, or workflow help.</p></article>
+          <article><span>4</span><h3>Get matched</h3><p>CariReps guides the next steps for service setup or talent matching.</p></article>
+          <article><span>5</span><h3>Stay organized</h3><p>Use your account to track requests, messages, updates, and next actions.</p></article>
+        </div>
+      </section>
+
+      <section class="comparison-section content-band">
+        <div class="section-heading">
+          <p class="section-label">Why CariReps?</p>
+          <h2>Less guessing than marketplaces. More accessible than big agencies.</h2>
+        </div>
+        <div class="comparison-grid">
+          <article>
+            <h3>Trying to hire alone</h3>
+            <ul class="check-list">
+              <li>You sort through too many applicants.</li>
+              <li>You lose time screening and following up.</li>
+              <li>You may not know what role you need first.</li>
+              <li>Systems and handoffs are left to you.</li>
+            </ul>
+          </article>
+          <article class="preferred">
+            <h3>CariReps</h3>
+            <ul class="check-list">
+              <li>Start with a simple $19/month membership.</li>
+              <li>Get guided service intake before scaling up.</li>
+              <li>Use messaging and clear request tracking.</li>
+              <li>Grow into talent matching or managed support.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="help-strip">
+        <div>
+          <p class="section-label">Still not sure?</p>
+          <h2>That is fine. Talk to us first.</h2>
+          <p>No pressure. Book a short discovery call or send an email and we will help you choose the right next step.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#booking" data-route="booking">Book a call</a>
+          <a class="button" href="mailto:itzkoolazjohnson@gmail.com">Email CariReps</a>
+        </div>
+      </section>
+    </section>
+
+    <section id="booking" class="page">
+      <div class="section-heading wide">
+        <p class="section-label">Pre-signup appointment</p>
+        <h1>Not sure yet? Book a quick call.</h1>
+        <p>Use this if you want to ask questions, explain your business, or confirm which CariReps service makes sense before joining.</p>
+      </div>
+      <div class="booking-layout">
+        <article class="booking-card primary-booking">
+          <span>Discovery call</span>
+          <h2>15-minute fit check</h2>
+          <p>For companies that want to understand the service before joining the Starter Network.</p>
+          <div class="booking-meta">
+            <strong>Free</strong>
+            <small>Video or phone call</small>
+          </div>
+          <button class="button primary" type="button">Book appointment</button>
+        </article>
+        <article class="booking-card">
+          <h3>Booking questions</h3>
+          <ul class="check-list">
+            <li>Company name and website</li>
+            <li>Country and timezone</li>
+            <li>Primary need: talent, support, sales, tech, social media, workflow</li>
+            <li>Current team size and desired start date</li>
+            <li>Best contact email and phone</li>
+          </ul>
+        </article>
+        <article class="booking-card">
+          <h3>Other ways to reach us</h3>
+          <ul class="check-list">
+            <li>Email: itzkoolazjohnson@gmail.com</li>
+            <li>LinkedIn: CariReps company page</li>
+            <li>Use the contact form for service questions.</li>
+            <li>Use booking if you want to speak before signing up.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="cards two spacer">
+        <article class="card">
+          <h3>What happens after booking</h3>
+          <ul class="check-list">
+            <li>You receive a confirmation by email.</li>
+            <li>CariReps reviews your company needs before the call.</li>
+            <li>You can ask about services, pricing, fit, and next steps.</li>
+            <li>If it makes sense, you can join and continue with service intake.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Not ready to join?</h3>
+          <ul class="check-list">
+            <li>Send a message with your questions.</li>
+            <li>Ask which service fits your business.</li>
+            <li>Book a discovery call before subscribing.</li>
+            <li>Apply later when your company is ready.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="join" class="page">
+      <div class="section-heading wide">
+        <p class="section-label">Join CariReps</p>
+        <h1>Start for $19/month.</h1>
+        <p>Create your business account, join the Starter Network, and then tell us what service help you need.</p>
+      </div>
+      <div class="join-layout">
+        <article class="checkout-card">
+          <span>Step 1</span>
+          <h3>Create your account</h3>
+          <p>Add your name, company, email, country, and the type of help you are looking for.</p>
+        </article>
+        <article class="checkout-card featured">
+          <span>Step 2</span>
+          <h3>Starter Network</h3>
+          <strong>$19/month</strong>
+          <p>Start your membership so you can request company services.</p>
+          <button class="button primary" type="button">Start signup</button>
+        </article>
+        <article class="checkout-card">
+          <span>Step 3</span>
+          <h3>Tell us what you need</h3>
+          <p>Submit a request for support, sales, talent, tech, social media, or workflow help.</p>
+        </article>
+      </div>
+      <div class="cards two spacer">
+        <article class="card">
+          <h3>Need to talk first?</h3>
+          <ul class="check-list">
+            <li>Book a discovery call before joining.</li>
+            <li>Email CariReps with your questions.</li>
+            <li>Connect through LinkedIn.</li>
+            <li>Ask which service path fits your company.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Starter Network includes</h3>
+          <ul class="check-list">
+            <li>Member access</li>
+            <li>Service request intake</li>
+            <li>Resource access</li>
+            <li>Upgrade path into managed services</li>
+          </ul>
+        </article>
+      </div>
+      <section class="pricing-options">
+        <div class="section-heading">
+          <p class="section-label">Payment options</p>
+          <h2>Choose monthly or yearly.</h2>
+        </div>
+        <div class="cards two">
+          <article class="card price-choice">
+            <h3>Monthly</h3>
+            <strong>$19/month</strong>
+            <p>Good if you want to start small and keep things flexible.</p>
+            <button class="button primary" type="button">Choose monthly</button>
+          </article>
+          <article class="card price-choice preferred">
+            <h3>Yearly</h3>
+            <strong>$190/year</strong>
+            <p>Good if you are ready to use CariReps for the full year. Includes two months saved compared with monthly.</p>
+            <button class="button primary" type="button">Choose yearly</button>
+          </article>
+        </div>
+      </section>
+      <section class="faq-block">
+        <div class="section-heading">
+          <p class="section-label">Quick answers</p>
+          <h2>Simple answers before you join.</h2>
+        </div>
+        <div class="cards three">
+          <article class="card"><h3>Do I have to book a call?</h3><p>No. You can sign up right away if you already know you want to start.</p></article>
+          <article class="card"><h3>What happens after I join?</h3><p>You submit your service request and CariReps helps guide the next step.</p></article>
+          <article class="card"><h3>Can I ask questions first?</h3><p>Yes. Book a discovery call or email CariReps before signing up.</p></article>
+          <article class="card"><h3>Can I pay yearly?</h3><p>Yes. Choose the yearly option if you want to stay active for the full year.</p></article>
+          <article class="card"><h3>Is this only for big companies?</h3><p>No. CariReps is built to help small and growing businesses get organized support.</p></article>
+          <article class="card"><h3>What if I need more than one service?</h3><p>Start with your biggest need first. CariReps can help you add more support as you grow.</p></article>
+        </div>
+      </section>
+    </section>
+
+    <section id="company" class="page">
+      <div class="section-heading wide">
+        <p class="section-label">Company accounts</p>
+        <h1>Each company needs its own protected workspace.</h1>
+        <p>Admin planning view. In production, this page appears only after login, active subscription, and companyId validation. Companies should only access records connected to their company ID: requests, service status, assigned talent, work delivered, KPI reports, invoices, and messages.</p>
+      </div>
+      <div class="company-shell">
+        <aside>
+          <strong>Horizon Dental Group</strong>
+          <small>Client workspace</small>
+          <nav>
+            <span>Overview</span>
+            <span>Service Requests</span>
+            <span>Assigned Talent</span>
+            <span>Work Reports</span>
+            <span>Invoices</span>
+            <span>Messages</span>
+            <span>Team Access</span>
+          </nav>
+        </aside>
+        <div class="company-main">
+          <div class="metrics">
+            <article><span>Plan</span><strong>$19</strong><small>Starter active</small></article>
+            <article><span>Requests</span><strong>3</strong><small>1 in review</small></article>
+            <article><span>Assigned reps</span><strong>2</strong><small>Pending approval</small></article>
+            <article><span>SLA</span><strong>94%</strong><small>Weekly report</small></article>
+          </div>
+          <div class="data-table">
+            <div class="table-row head"><span>Area</span><span>What company sees</span><span>Access rule</span><span>Status</span></div>
+            <div class="table-row"><span>Service request</span><span>Submitted needs and admin responses</span><span>companyId match</span><span>Visible</span></div>
+            <div class="table-row"><span>Talent match</span><span>Approved candidate profile only</span><span>match approved</span><span>Limited</span></div>
+            <div class="table-row"><span>Work reports</span><span>KPIs, tasks completed, next steps</span><span>projectId match</span><span>Visible</span></div>
+            <div class="table-row"><span>Billing</span><span>Invoice summary and subscription status</span><span>owner member only</span><span>Visible</span></div>
+            <div class="table-row"><span>Messages</span><span>Company-to-CariReps task communication</span><span>companyId + threadId match</span><span>Visible</span></div>
+          </div>
+          <div class="cards two flat spacer">
+            <article class="card">
+              <h3>Company admin controls</h3>
+              <p>Invite teammates, update company contact info, submit upgrade requests, and view billing summaries. Regular company users can view assigned work but cannot change billing or access.</p>
+            </article>
+            <article class="card">
+              <h3>Account separation</h3>
+              <p>A user is a person. A Company is the business account. Each user record links to a companyId, and every portal query must filter against that companyId.</p>
+            </article>
+            <article class="card message-card">
+              <h3>Client message thread</h3>
+              <div class="message-thread">
+                <p><strong>Client:</strong> Can we add weekend coverage to the support task list?</p>
+                <p><strong>CariReps Ops:</strong> Yes. We added it to the request queue and will confirm staffing options by Thursday.</p>
+                <p><strong>Client:</strong> Please attach the update to Project 01.</p>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Customer-friendly errors</h3>
+              <p>If something breaks, clients should see a clear message like: “We could not load this report. Please try again or message CariReps.” The technical error goes to admin logs, not the customer screen.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="model" class="page">
+      <div class="section-heading wide">
+        <p class="section-label">Talent application</p>
+        <h1>Join the CariReps talent network.</h1>
+        <p>Apply if you have experience in customer support, sales support, technical support, social media, administration, or business operations.</p>
+      </div>
+      <div class="process-list">
+        <article><span>1</span><div><h3>Tell us about your experience</h3><p>Share your skills, work history, languages, timezone, and the type of work you are looking for.</p></div></article>
+        <article><span>2</span><div><h3>Complete screening</h3><p>CariReps reviews your application and may request a short interview, test task, or training step.</p></div></article>
+        <article><span>3</span><div><h3>Join the talent pool</h3><p>Approved applicants can be considered for client opportunities that match their skills and availability.</p></div></article>
+        <article><span>4</span><div><h3>Get matched to work</h3><p>When a company needs your skills, CariReps contacts you with the opportunity details and next steps.</p></div></article>
+      </div>
+    </section>
+
+    <section id="security" class="page">
+      <div class="section-heading wide">
+        <p class="section-label">Access control</p>
+        <h1>Security first: not everybody sees everything.</h1>
+        <p>Internal admin planning view. This page should not be visible to public visitors, subscribers, clients, or talent. On Vercel, this should be enforced with authenticated API routes, role checks, database row ownership, and server-side validation.</p>
+      </div>
+      <div class="cards two">
+        <article class="card">
+          <h3>Roles</h3>
+          <ul class="check-list">
+            <li>Owner/Admin: full access to clients, talent, payments, reports, and settings.</li>
+            <li>Operations Manager: projects, onboarding, talent matching, tasks, and KPIs.</li>
+            <li>Sales/Marketing: leads, campaigns, service requests, and prospect notes.</li>
+            <li>Finance: subscriptions, invoices, refunds, payment status, and billing notes.</li>
+            <li>Company Admin: business owner who manages company users, requests, billing summaries, and upgrades.</li>
+            <li>Client: only their company profile, requests, assigned project, invoices, and reports.</li>
+            <li>Talent: only their profile, training, opportunities, assigned tasks, and messages.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Protected pages</h3>
+          <ul class="check-list">
+            <li>Admin dashboard: owner and internal team only.</li>
+            <li>Client portal: logged-in clients only, filtered by their company ID.</li>
+            <li>Talent portal: logged-in talent only, filtered by member ID.</li>
+            <li>Payment/subscription pages: authenticated customers only.</li>
+            <li>Competitor map and AI automation rules: internal or owner-only.</li>
+            <li>Public pages: Home, Services, Pricing, About, Contact, Apply.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Collection rules</h3>
+          <ul class="check-list">
+            <li>Clients: admin write, client read only for owned company records.</li>
+            <li>Talent: admin write, talent read/update limited public profile fields.</li>
+            <li>Projects: admin write, client/talent read only assigned records.</li>
+            <li>Payments: owner/admin only; never expose full payment details in custom code.</li>
+            <li>Messages/tasks: member-scoped queries through backend logic.</li>
+            <li>AuditLog: append-only from backend, readable by owner/admin only.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Backend controls</h3>
+          <ul class="check-list">
+            <li>Validate all form input before inserting into CMS collections.</li>
+            <li>Use backend web modules for sensitive queries and matching logic.</li>
+            <li>Use data hooks to normalize emails, reject bad statuses, and stamp owner IDs.</li>
+            <li>Keep secrets in Vercel environment variables, never frontend code or public data.</li>
+            <li>Log admin actions for client, talent, subscription, and project changes.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Agentic AI guardrails</h3>
+          <ul class="check-list">
+            <li>AI can draft matches, task plans, and KPI summaries, but admin approves before records change.</li>
+            <li>AI tools receive filtered records only; no full payment data or private documents.</li>
+            <li>Every AI recommendation stores source records, confidence, reviewer, and approval status.</li>
+            <li>AI automations run from backend functions, never public page code.</li>
+            <li>Owner can pause AI automations from a protected settings page.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Role-based views</h3>
+          <ul class="check-list">
+            <li>Subscriber sees resources and their own service requests.</li>
+            <li>Client sees their projects, KPIs, tasks, invoices, and assigned talent only.</li>
+            <li>Talent sees training, availability, assigned work, and approved opportunities only.</li>
+            <li>Internal team sees operational dashboards based on assigned department.</li>
+            <li>Owner sees system settings, roles, audit logs, and strategic research.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="dashboard" class="page">
+      <div class="dashboard-shell">
+        <aside class="side-rail">
+          <strong>CariReps OS</strong>
+          <small>Internal admin only</small>
+          <button class="active" data-panel="command">Command</button>
+          <button data-panel="clients">Clients</button>
+          <button data-panel="talent">Talent</button>
+          <button data-panel="services">Services</button>
+          <button data-panel="messages">Messages</button>
+          <button data-panel="logs">Error Logs</button>
+          <button data-panel="research">R&D</button>
+          <button data-panel="securityOps">Security</button>
+        </aside>
+        <div class="dashboard-main">
+          <section id="command" class="panel-view active">
+            <div class="metrics">
+              <article><span>Subscribers</span><strong>318</strong><small>$6,042 MRR at $19</small></article>
+              <article><span>Client leads</span><strong>42</strong><small>US, Canada, global</small></article>
+              <article><span>Ready talent</span><strong>128</strong><small>31 fully trained</small></article>
+              <article><span>Active projects</span><strong>9</strong><small>3 ready to expand</small></article>
+            </div>
+            <div class="cards two flat">
+              <article class="card"><h3>Next admin moves</h3><p>Review new intake forms, approve talent profiles, assign access roles, and package three clear upgrade offers.</p></article>
+              <article class="card"><h3>Health signals</h3><p>Track response time, placement quality, subscription churn, support SLA, client satisfaction, and talent readiness.</p></article>
+            </div>
+          </section>
+          <section id="clients" class="panel-view">
+            <div class="data-table">
+              <div class="table-row head"><span>Client</span><span>Need</span><span>Status</span><span>Access</span></div>
+              <div class="table-row"><span>Horizon Dental</span><span>Bilingual support</span><span>Proposal</span><span>Client only</span></div>
+              <div class="table-row"><span>Northstar Logistics</span><span>Sales ops</span><span>Discovery</span><span>Admin only</span></div>
+              <div class="table-row"><span>Mason Legal Intake</span><span>After-hours team</span><span>Live</span><span>Client + assigned reps</span></div>
+            </div>
+          </section>
+          <section id="talent" class="panel-view">
+            <div class="cards three flat">
+              <article class="card"><h3>Ana Rivera</h3><p>Bilingual CS, healthcare intake, ready for matching.</p></article>
+              <article class="card"><h3>Marcus Johnson</h3><p>Outbound sales, HubSpot, training in progress.</p></article>
+              <article class="card"><h3>Elena Park</h3><p>Technical support, SOPs, onboarding support.</p></article>
+            </div>
+          </section>
+          <section id="services" class="panel-view">
+            <div class="pricing-grid">
+              <article><h3>Starter Network</h3><strong>$19/mo</strong><p>Access, intake, resources, basic request tracking.</p></article>
+              <article><h3>Talent Match</h3><strong>$299+</strong><p>Shortlist, interview support, matching workflow.</p></article>
+              <article><h3>Managed Pod</h3><strong>$800+/mo</strong><p>Support, sales, admin, or social media delivery.</p></article>
+            </div>
+          </section>
+          <section id="messages" class="panel-view">
+            <div class="section-heading">
+              <h2>Client communication center</h2>
+              <p>Every client question, task note, and project update should live in a company-scoped thread.</p>
+            </div>
+            <div class="data-table">
+              <div class="table-row head"><span>Thread</span><span>Company</span><span>Related work</span><span>Status</span></div>
+              <div class="table-row"><span>Weekend coverage</span><span>Horizon Dental</span><span>Project 01</span><span>Waiting on Ops</span></div>
+              <div class="table-row"><span>New CRM access</span><span>Northstar Logistics</span><span>Onboarding</span><span>Client reply needed</span></div>
+              <div class="table-row"><span>Weekly report question</span><span>Mason Legal</span><span>KPI Report</span><span>Resolved</span></div>
+            </div>
+          </section>
+          <section id="logs" class="panel-view">
+            <div class="section-heading">
+              <h2>Error log center</h2>
+              <p>Customers see plain-language messages. Admins see the technical event, page, user, company, severity, and next action.</p>
+            </div>
+            <div class="data-table">
+              <div class="table-row head"><span>Error</span><span>Where</span><span>User message</span><span>Admin status</span></div>
+              <div class="table-row"><span>REPORT_LOAD_FAILED</span><span>Company Portal</span><span>We could not load this report.</span><span>Investigating</span></div>
+              <div class="table-row"><span>PAYMENT_SYNC_DELAY</span><span>Signup</span><span>Your payment is processing.</span><span>Watching webhook</span></div>
+              <div class="table-row"><span>MESSAGE_SEND_RETRY</span><span>Messages</span><span>Message not sent. Try again.</span><span>Auto retry queued</span></div>
+            </div>
+          </section>
+          <section id="research" class="panel-view">
+            <div class="cards two flat">
+              <article class="card"><h3>Research & development</h3><p>Internal-only research on competitors, pricing, automation, support workflows, talent markets, and service packaging.</p></article>
+              <article class="card"><h3>Agent workspace</h3><p>Design, Vercel architecture, payments, security, company portal, talent portal, copy, and QA agents each get a focused checklist and only the data they need.</p></article>
+            </div>
+          </section>
+          <section id="securityOps" class="panel-view">
+            <div class="cards two flat">
+              <article class="card"><h3>Admin-only security</h3><p>Security controls, role assignment, audit logs, backend validation, and AI automation rules are never shown on the public website or normal client portal.</p></article>
+              <article class="card"><h3>Access model</h3><p>Every sensitive query filters by memberId, companyId, projectId, or role. Admin routes use backend functions rather than direct frontend collection writes.</p></article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
